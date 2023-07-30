@@ -10,6 +10,6 @@ function showClock2() {
    var nowMin  = set2fig( nowTime.getMinutes() );
    var nowSec  = set2fig( nowTime.getSeconds() );
    var msg = "nowHour + ":" + nowMin + ":" + nowSec";
-   document.getElementById("RealtimeClockArea2").innerHTML = msg;
+   document.getElementById("Clockvalue").innerHTML = msg;
 }
 setInterval('showClock2()',1000);
