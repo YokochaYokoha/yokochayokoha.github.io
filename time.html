@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    }, function(err) {
-       console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-</script>
+
 <head>
-  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/192x192.png">
-<link rel="apple-touch-startup-image" href="/640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-<link rel="apple-touch-startup-image" href="/750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-<link rel="apple-touch-startup-image" href="/1080x1920 .png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-<link rel="apple-touch-startup-image" href="/1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
-  <link rel="manifest" href="/manifest.json">
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>現在時刻[Web版]by横茶横葉</title>
   <meta charset="UTF-8">
