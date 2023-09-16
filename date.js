@@ -1,6 +1,6 @@
 function showClock2() {
    var fulldata = new Date();
-   var year = fulldata.fullyear();
+   var year = fulldata.FullYear();
   var month=fulldata.getMonth()+1;
   var day=fulldata.getDate();
   var dayvalue=fulldata.getDay();
