@@ -4,10 +4,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>横茶横葉のサイト</title>
   <meta charset="UTF-8">
-      <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
-</head>
+   </head>
 <body>
   <h1>横茶横葉のサイト</h1>
 
@@ -51,77 +48,8 @@
   <p><font color="green">©︎2023-2024 横茶横葉 All Rights Reserved.</font></p>
   <p>Drawings:横井陽菜デフォルメ/茶町瑠璃/横茶横葉の手/Coffeeロゴマーク/横井陽菜/葉摘優</p>
   <p>権利表記:YouTubeはGoogle LLCの商標または登録商標です。</p>
-
-<br>
   <br>
-  <p>Appendixその2:</p>
-        <canvas id="hyoujimado" width="20" height="20"></canvas>
-  <p>3Dモデリングにも現在挑戦中です!(2本指で移動できます)</p>
-  <p>Powered by Three.js Thanks!</p>
-  
-      <script>
-     
-      window.addEventListener('DOMContentLoaded', init);
-
-      function init() {
-        
-        const width = 1000;
-        const height = 1000;
-
-        
-        const canvasElement = document.querySelector('#hyoujimado');
-        const renderer = new THREE.WebGLRenderer({
-          canvas: canvasElement,
-        });
-        renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setSize(width, height);
-
-        
-        const scene = new THREE.Scene();
-
-        
-        const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 10000);
-        
-        camera.position.set(2, 2, 2);
-
-        
-        const controls = new THREE.OrbitControls(camera, canvasElement);
-        controls.target.set(0, 0, 0);
-        controls.update();
-
-       
-        const directionalLight = new THREE.DirectionalLight(0xffffff);
-        directionalLight.position.set(1, 1, 1);
-        scene.add(directionalLight);
-      
-        const ambientLight = new THREE.AmbientLight(0xffffff);
-        scene.add(ambientLight);
-        
-        const backgroundTexture  = new THREE.TextureLoader().load("./pic.png");
-        scene.background = backgroundTexture;
-
-        
-        const loader = new THREE.GLTFLoader();
-
-        loader.load('./bottle1.glb', (gltf) => {
-          
-          const model = gltf.scene;
-          scene.add(model);
-        });
-
-        
-        tick();
-
-        
-        function tick() {
-         
-          renderer.render(scene, camera);
-          requestAnimationFrame(tick);
-        }
-      }
-      
-     
-    </script>
+<p>期間限定コンテンツの掲載は終了しました</p>
   
 </body>
 </html>
