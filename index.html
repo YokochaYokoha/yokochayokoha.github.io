@@ -1,21 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>横茶横葉のサイト</title>
-  <meta charset="UTF-8">
-   </head>
-<body>
-  <h1>横茶横葉のサイト</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横茶横葉のサイト</title>
+    <!--Rev2!-Reorganize started date is 2024/7/3 -->
+    <!--見てくれている方へ:手動でぱちぱちキーボードを打っただけなので中身は全然すごくないです...各所に日本語のコメントアウトが目立つサイトです。-->
+    <!--こんなサイトなので構成を覗いてみてもなんにも新しい学びはないかと思いますが、、見ようとしてくれたことに感謝します!-->
+    <!--CSSを本気で勉強しながら作りました!-->
+    <!--GithubもDevtoolsも、便利ですよね!(ベンリネ-!)   横茶横葉隠しメッセージ終わり-->
+</head>
+<!--ここから下がCSS(複数あると個人的に管理に困るので単一ファイルにしました)-->
+<style>
+    /*C#に慣れているのでC#風に入力させてくださいね!*/
+/*全体テーマ色指定(本文)*/
+body 
+{
+    font-family: Arial, sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: #EFFFDF;
+    color: #333;
+}
+/*ここからsection1(ヘッダー)*/
+header
+{
+    position: relative;
+    overflow: hidden;
+    background-color: lightsalmon;
+}
+.carouselkari
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carouselimgs
+{
+    display: flex;
+    width: 100%;
+    animation: carouselmove 10s infinite;
+}
+.imgcontainer
+{
+    /*一枚づつズーム表示*/
+    width: 100%;
+    flex-shrink: 0;
+}
+.imgcontainer img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-  <img src="./trademark.png" alt="バナー画像" width="20%">
-  <br>
-  <p>現在、サイトの<em>改装工事中</em>です。リニューアルまで一部のコンテンツが閲覧できない場合があります。完了までお待ちください!</p>
-  <br>
-<p>新着情報 - 3件(詳細は<a href="https://twitter.com/YokochaYokoha">報連相アカウントへ!</a>)</p>
-  <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="en" dir="ltr">Active Projects --July 2024<br>------------------------------<br>·Coffee for PC(C4P) Ver.3.0<br>·Coffee for Android Updates<br>·Yokoha Atlas Update<br>·Renew the main site<br>·C4P Extensions<br>------------------------------<br>And so on!</p>&mdash; 横茶横葉 報連相 (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1808275088581841341?ref_src=twsrc%5Etfw">2024年7月2日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">Coffee for Androidの新規DynamicUA配信しました! <a href="https://t.co/W36lY3CMY1">pic.twitter.com/W36lY3CMY1</a></p>&mdash; 横茶横葉【アプリ&amp;ソフト、イラスト(練習中)etc.】 (@yokocha_yokoha) <a href="https://twitter.com/yokocha_yokoha/status/1806619409110499745?ref_src=twsrc%5Etfw">2024年6月28日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">シンプルQRコード生成サイト、公開中!<br>どなたでも無料+広告なしでご利用いただけます!<br>是非!<a href="https://t.co/LfR5NfwWTj">https://t.co/LfR5NfwWTj</a> <a href="https://t.co/WCwvn4c6bx">pic.twitter.com/WCwvn4c6bx</a></p>&mdash; 横茶横葉【アプリ&amp;ソフト、イラスト(練習中)etc.】 (@yokocha_yokoha) <a href="https://twitter.com/yokocha_yokoha/status/1806497294495392031?ref_src=twsrc%5Etfw">June 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+@keyframes
+carouselmove
+{
+    /*3枚分の画像アニメーション*/
+    0%{transform: translateX(0%);}
+    33%{transform:translateX(-100%);}
+    66%{transform: translateX(-200%);}
+    100%{transform: translateX(0%);}
+}
+.timenow
+{
+    /*固定的表示にセット*/
+    position: absolute;
+    /*上から10px分下へ、右端から10px分左へ移動した位置に固定的表示*/
+    top: 10px;
+    right:10px;
+    color:white;
+    font-size: 1.4em;
+    background-color: #000000;
+    /*5px分丸角表示(card)*/
+    border-radius: 5px;
+    /*文字を上下5px,左右10px隙間を開けておきます*/
+    padding: 5px 10px;
+}
+/*ここまでsection1*/
+/*ここからsection2*/
+.A
+{
+padding: 20px;
+background-color: aliceblue;
+/*Coffeeブラウザー風丸角表示(card)*/
+border-radius: 15px;
+/*影(お洒落)*/
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+/*はみ出し阻止*/
+max-width: 900px;
+/*マージンを縦20px横自動で指定*/
+margin: 20px auto;
+}
+.align1
+{
+    display: flex;
+    /*↓これ大事!*/
+    align-items: center;
+}
+.align1 h1
+{
+    /*Coffeeブラウザー風タイトル表示(単なる拘り)*/
+    width: 100%;
+    background-color: white;
+}
+/*ここまでsection2*/
+/*ここからsection3*/
+.B
+{
+padding: 20px;
+background-color:darkseagreen;
+/*Coffeeブラウザー風丸角表示(card)*/
+border-radius: 15px;
+/*影(お洒落)*/
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+/*はみ出し阻止*/
+max-width: 900px;
+/*マージンを縦20px横自動で指定*/
+margin: 20px auto;
+}
+.C
+{
+padding: 20px;
+background-color:bisque;
+/*Coffeeブラウザー風丸角表示(card)*/
+border-radius: 15px;
+/*影(お洒落)*/
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+/*はみ出し阻止*/
+max-width: 900px;
+/*マージンを縦20px横自動で指定*/
+margin: 20px auto;
+}
+.D
+{
+padding: 20px;
+background-color:mediumaquamarine;
+/*Coffeeブラウザー風丸角表示(card)*/
+border-radius: 15px;
+/*影(お洒落)*/
+box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+/*はみ出し阻止*/
+max-width: 900px;
+/*マージンを縦20px横自動で指定*/
+margin: 20px auto;
+}
+</style>
+<body>
+    <header>
+        <!--ここからCSS section1部(ヘッダー)-->
+        <div class="caroucelkari">
+
+            <div class="carouselimgs">
+<!--               <div class="imgcontainer"><img src="header1.png" alt="ヘッダーカールセル画像"></div>
+               <div class="imgcontainer"><img src="header2.png" alt="ヘッダーカールセル画像"></div>
+               <div class="imgcontainer"><img src="header3.png" alt="ヘッダーカールセル画像"></div>
+            -->
+            <div class="imgcontainer"><img src="1.png" alt="ヘッダーカールセル画像"></div>
+            <div class="imgcontainer"><img src="2.png" alt="ヘッダーカールセル画像"></div>
+            <div class="imgcontainer"><img src="3.png" alt="ヘッダーカールセル画像"></div>
+            </div>
+        </div>
+        <div class="timenow" id="time"></div>
+        <!--ここまでsection1-->
+</header>
+<!--ここからsection2-->
+    <main>
+     <div class="A">
+        <div class="align1">
+             <img src="trademark.png" width="15%" height="15%">
+             <h1>横茶横葉のサイト</h1> 
+        </div>
+   </div>
+   <!--ここまでsection2-->
+   <!--ここからsection3-->
+        <div class="B">
+          <h2>現在大幅なリニューアル作業を行っています。一部機能が正常に動作しない場合があります。</h2>
+            <h3>新着情報 - 3件(詳細は<a href="https://twitter.com/YokochaYokoha">報連相アカウントへ!</a>)</h3>
+            <noscript><h1><font color="red">Javascriptが無効です。一部コンテンツは表示できません。<br>Coffeeブラウザーの場合は快適読書モードまたは緊急データセーバーをオフにしてください。</font></h1></noscript>
+            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">メインサイトは現在長期メンテナンス中です。完了までお待ち下さい。<br><br> The main site is currently under maintenance. Please wait until the maintenance is completed.</p>&mdash; 横茶横葉 報連相 (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1808450071824064623?ref_src=twsrc%5Etfw">2024年7月3日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="en" dir="ltr">Active Projects --July 2024<br>------------------------------<br>·Coffee for PC(C4P) Ver.3.0<br>·Coffee for Android Updates<br>·Yokoha Atlas Update<br>·Renew the main site<br>·C4P Extensions<br>------------------------------<br>And so on!</p>&mdash; 横茶横葉 報連相 (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1808275088581841341?ref_src=twsrc%5Etfw">2024年7月2日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">Coffee for Androidの新規DynamicUA配信しました! <a href="https://t.co/W36lY3CMY1">pic.twitter.com/W36lY3CMY1</a></p>&mdash; 横茶横葉【アプリ&amp;ソフト、イラスト(練習中)etc.】 (@yokocha_yokoha) <a href="https://twitter.com/yokocha_yokoha/status/1806619409110499745?ref_src=twsrc%5Etfw">2024年6月28日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="C">
+<h3>各種サービス一覧</h3>
 <br>
   <p>旧メインサイト</p>
   <a href="https://sites.google.com/view/yokochayokoha/"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner.png?raw=true" alt="サイトへアクセス" width="50%"></a>
@@ -38,11 +208,20 @@
  <p>GitHub(新アカウント)</p>
 <a href="https://github.com/YokochaYokoha"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner%20(6).png?raw=true" alt="バナー画像" width="50%"></a>
   <br>
-<br>
-    <p><font color="green">©︎2023-2024 横茶横葉 All Rights Reserved.</font></p>
-  <p>権利表記:YouTubeはGoogle LLCの商標または登録商標です。</p>
-  <br>
-<p>期間限定コンテンツの掲載は終了しました</p>
-  
+        </div>
+   <div class="D">
+<h3>期間限定コンテンツ</h3>
+<p>掲載期間が終了しました。次の公開までお待ち下さい。</p>
+    </div>
+   <!--ここまでsection3-->
+    </main>
+
+
+
+    <footer>
+        &copy; 2023-2024 横茶横葉(YokochaYokoha) All Rights Reserved.
+        <p>権利表記:YouTubeはGoogle LLCの商標または登録商標です。</p>
+        <p>Rev.2.0 Made by YokochaYokoha!</p>
+    </footer>
 </body>
 </html>
