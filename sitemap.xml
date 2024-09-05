@@ -10,7 +10,20 @@
 </url>
   <url>
   <loc>https://yokochayokoha.github.io/fastportal</loc>
-  <priority>0.5</priority>
+  <priority>0.2</priority>
+  <lastmod>2024-01-03T22:03:28+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+  <url>
+  <loc>https://yokochayokoha.github.io/anzu</loc>
+  <priority>0.9</priority>
+  <lastmod>2024-01-03T22:03:28+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+  
+  <url>
+  <loc>https://yokochayokoha.github.io/CoffeeSub</loc>
+  <priority>0/6</priority>
   <lastmod>2024-01-03T22:03:28+09:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
