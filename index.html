@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="横茶横葉(よこのは)のオフィシャルホームページです。お知らせや各種サービスへのリンクが書いてあります。">
+    <meta name="description" content="横茶横葉(よこのは)のサイトです。お知らせやアプリ、ソフト、各種リンク、イラスト等、いろんなものを掲載中します! 最新情報:HTML5ゲーム「あんずはあんずが食べたい!」を公開しました。 簡素ではありますが、もしも、お時間があれば見ていってくださいね!">
     <title>横茶横葉のサイト</title>
-    <!--Rev2!-Reorganize started date is 2024/7/3 -->
-    <!--見てくれている方へ:手動でぱちぱちキーボードを打っただけなので中身は全然すごくないです...各所に日本語のコメントアウトが目立つサイトです。-->
-    <!--こんなサイトなので構成を覗いてみてもなんにも新しい学びはないかと思いますが、、見ようとしてくれたことに感謝します!-->
-    <!--CSSを本気で勉強しながら作りました!-->
-    <!--GithubもDevtoolsも、便利ですよね!(ベンリネ-!)   横茶横葉隠しメッセージ終わり-->
+    <link href="coffeeui.css" rel="stylesheet"/> 
 </head>
     <!--依存関係(時刻表示)-->
     <script src = "./timenow.js"></script>
 <!--ここから下がCSS(複数あると個人的に管理に困るので単一ファイルにしました)-->
 <style>
-    /*C#に慣れているのでC#風に入力させてくださいね!*/
+
+
+  /*C#に慣れているのでC#風に入力させてくださいね!*/
 /*全体テーマ色指定(本文)*/
 body 
 {
@@ -95,112 +93,7 @@ carouselmove
 }
 /*ここまでsection1*/
 /*ここからsection2*/
-.A
-{
-padding: 20px;
-background-color: aliceblue;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-.align1
-{
-    display: flex;
-    /*↓これ大事!*/
-    align-items: center;
-}
-.align1 h1
-{
-    /*Coffeeブラウザー風タイトル表示(単なる拘り)*/
-    width: 100%;
-    background-color: white;
-}
-/*ここまでsection2*/
-/*ここからsection3*/
-.B
-{
-padding: 20px;
-background-color:darkseagreen;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-.C
-{
-padding: 20px;
-background-color:bisque;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-.D
-{
-padding: 20px;
-background-color:mediumaquamarine;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-    .E
-{
-padding: 20px;
-background-color:mediumaquamarine;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-    .F
-{
-padding: 20px;
-background-color:teal;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-}
-    .G
-{
-padding: 20px;
-background-color:white;
-/*Coffeeブラウザー風丸角表示(card)*/
-border-radius: 15px;
-/*影(お洒落)*/
-box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-/*はみ出し阻止*/
-max-width: 900px;
-/*マージンを縦20px横自動で指定*/
-margin: 20px auto;
-       overflow: hidden;
-}
+
     .carouselkari2
 {
     width: 100%;
@@ -212,7 +105,7 @@ margin: 20px auto;
 <body>
     <header>
         <div class="A">
-            <div class="align1">
+            <div class="title">
                  <img src="trademark.png" width="15%" height="15%">
                  <h1>横茶横葉のサイト</h1> 
             </div>
@@ -237,11 +130,10 @@ margin: 20px auto;
    <!--ここからsection3-->
         <div class="B">
           <h2>現在大幅なリニューアル作業を行っています。一部機能が正常に動作しない場合があります。</h2>
-            <h3>新着情報 - 3件(詳細は<a href="https://twitter.com/YokochaYokoha">報連相アカウントへ!</a>)</h3>
+            <h3>新着情報 - 2件(詳細は<a href="https://twitter.com/YokochaYokoha">報連相アカウントへ!</a>)</h3>
             <noscript><h1><font color="red">Javascriptが無効です。一部コンテンツは表示できません。<br>Coffeeブラウザーの場合は快適読書モードまたは緊急データセーバーをオフにしてください。</font></h1></noscript>
-            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">Coffee18.1の配信を開始しました。<br>Coffee18.1 is now available.<br><br>SHA256:<br>3dd130332a771cbf34e02f72f7148d6f96082f10b07a0f321b1d54feeb1e9ff2<br><br>Official Link:<a href="https://t.co/ZlzxCQIUk5">https://t.co/ZlzxCQIUk5</a></p>&mdash; 横茶横葉 報連相 -Y.Yokoha Reports&amp;Contacts (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1821537551305621669?ref_src=twsrc%5Etfw">2024年8月8日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">現在、Coffee(スマホ版,Ver.18.0)とCoffee for PC Ver.3.0にてGoogle PlayプロテクトとWindows Defenderにマルウェアとして誤検知され、インストールが出来なくなっている不具合が確認されています。現在解決方法を模索中です。ご迷惑をお掛け致します。<br>(オートバージョンアップ受付は一時停止します)</p>&mdash; 横茶横葉 報連相 -Y.Yokoha Reports&amp;Contacts (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1815381170634527202?ref_src=twsrc%5Etfw">2024年7月22日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">サイト更新作業全工程の1/3が完了しました。完了までお待ち下さい。<br> The site update work is one-third complete. Please wait until it is complete.</p>&mdash; 横茶横葉 報連相 -Y.Yokoha Reports&amp;Contacts (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1808995479629484166?ref_src=twsrc%5Etfw">2024年7月4日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">[横葉より]パソコン、スマホで気軽に遊べる ちょっとした暇つぶしゲーム を公開しました! お暇がありましたらちょっと遊んでみてくださいね! <a href="https://twitter.com/hashtag/%E3%81%82%E3%82%93%E3%81%9A%E3%81%AF%E3%81%82%E3%82%93%E3%81%9A%E3%81%8C%E9%A3%9F%E3%81%B9%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw">#あんずはあんずが食べたい</a><a href="https://t.co/zb8uKEYack">https://t.co/zb8uKEYack</a></p>&mdash; 横茶横葉 報連相 -Y.Yokoha Reports&amp;Contacts (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1831354796823191778?ref_src=twsrc%5Etfw">2024年9月4日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet" data-lang="ja" data-theme="dark"><p lang="ja" dir="ltr">Coffee18.1の配信を開始しました。<br>Coffee18.1 is now available.<br><br>SHA256:<br>3dd130332a771cbf34e02f72f7148d6f...<br><br>Official Link:<a href="https://t.co/ZlzxCQIUk5">https://t.co/ZlzxCQIUk5</a></p>&mdash; 横茶横葉 報連相 -Y.Yokoha Reports&amp;Contacts (@YokochaYokoha) <a href="https://twitter.com/YokochaYokoha/status/1821537551305621669?ref_src=twsrc%5Etfw">2024年8月8日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
    </div>
 
         <div class="G">
@@ -259,14 +151,17 @@ margin: 20px auto;
             
 
 <div class="E">
-    <h3>横茶横葉の楽曲</h3>
+    <h3>横茶横葉のBGM(がればんです)</h3>
     <p>"ドライブ" from 横茶横葉Instrumentals -試聴↓</p>
     <iframe src="https://www.youtube.com/embed/aHgNG2a1vjc?si=G7wEbMneRrnJK7RB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </div>
+    <p>"練習" from 横茶横葉Instrumentals -試聴↓</p>
+    <iframe src="https://www.youtube.com/embed/eHrS0vwFbbs" title="練習" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 <div class="F">
-    <h3>YouTubeの動画</h3>
+    <h3>YouTubeの動画(一部)</h3>
+    <iframe src="https://www.youtube.com/embed/90J5GfshHzA" title="「あんずはあんずが食べたい!」 ミニゲーム紹介映像" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe  src="https://www.youtube.com/embed/hnN3JGMeFcA" title="鳩 (まぢか)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <iframe  src="https://www.youtube.com/embed/jQcipoGEiO4?si=ysZVwCzojZANMfxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/Ps2ftSw4WMc?si=5ZYIyAhsMh411hi5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -274,12 +169,9 @@ margin: 20px auto;
         <div class="C">
 <h3>各種サービス一覧</h3>
 <br>
-  <p>旧メインサイト</p>
-  <a href="https://sites.google.com/view/yokochayokoha/"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner.png?raw=true" alt="サイトへアクセス" width="50%"></a>
-  <br>
   <p>YouTubeチャンネル</p>
-  <a href="https://www.youtube.com/@yokocha.yokoha"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner%20(5).png?raw=true" alt="バナー画像" width="50%"></a>
-<br>
+  <a href="https://www.youtube.com/@yokocha.yokoha"><img src="./ytch.png" alt="バナー画像" width="50%"></a>
+  <br>
   <p>Cafeアプリストア</p>
   <a href="https://sites.google.com/view/yokocafe/"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner%20(2).png?raw=true" alt="Cafeアプリストアへアクセス" width="50%"></a>
 <br>
@@ -287,7 +179,7 @@ margin: 20px auto;
   <a href="https://yokochayokoha.github.io/CoffeeSub"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner%20(4).png?raw=true" alt="CoffeeSubを使用" width="50%"></a>
   <br>
  <p>GitHub(新アカウント)</p>
-<a href="https://github.com/YokochaYokoha"><img src="https://github.com/YokochaYokoha/YokochaYokoha/blob/main/banner%20(6).png?raw=true" alt="バナー画像" width="50%"></a>
+<a href="https://github.com/YokochaYokoha"><img src="./gh.png" alt="バナー画像" width="50%"></a>
   <br>
         </div>
    <div class="D">
